@@ -1,0 +1,31 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+Foot,res:real;
+Kilometr:integer;
+begin
+ writeln('Напишите расстояние в километрах');
+ readln(Kilometr);
+ writeln('Напишите расстояние в футах');
+ readln(Foot);
+ res:= 3280*Foot;
+  if Kilometr=res then
+  begin
+   writeln('Расстояние равно. ','Километры-',Kilometr,' Футы-',res);
+  end;
+ if Kilometr>res then
+ begin
+   writeln('Расстояние в километрах больше. ','Километры-',Kilometr,' Футы-',res,2);
+ end
+ else begin
+   writeln('Расстояние в километрах меньше. ','Километры-',Kilometr,' Футы-',res,2);
+ end;
+readln;
+end.

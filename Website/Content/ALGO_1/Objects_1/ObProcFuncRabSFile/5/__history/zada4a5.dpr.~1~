@@ -1,0 +1,20 @@
+program zada4a5;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var f:file of real;
+n:real;
+i:integer;
+begin
+assign(f,'C:\Users\User\Desktop\сайт\ѕз7\з5\res.txt');
+rewrite(f);
+n:=4.5;
+i:=500;
+write(f,i,n,'привет');
+close(f);
+end.

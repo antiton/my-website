@@ -1,0 +1,18 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+a,b,c:integer;         //посто€нные, переменные
+begin
+Writeln('¬ведите трехзначное число: ');
+readln (a);
+
+
+Readln;
+end.

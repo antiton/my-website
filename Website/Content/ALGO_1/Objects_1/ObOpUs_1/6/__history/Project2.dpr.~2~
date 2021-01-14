@@ -1,0 +1,27 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+m,m1:integer;
+v,v1:integer;
+begin
+Writeln('¬ведите массу тела: ');
+readln(m);
+Writeln('¬ведите объем тела: ');
+readln(v);
+Writeln('¬ведите массу второго тела: ');
+readln(m1);
+Writeln('¬ведите объем второго тела: ');
+readln(v1);
+if (m/v) > (m1/v1) then
+    Writeln('ѕлотность первого тела выше второго')
+else
+    Writeln('ѕлотность второго тела выше первого');
+readln;
+end.

@@ -1,0 +1,21 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var n, c, d, e, k : integer; //переменные
+
+begin             //начало
+writeln ('введите 3-х значное число = ');//вывод на экран
+readln (n);     //считывание с клавиатуры
+c := n div 100;        //деление
+d := (n div 10) mod 10;//деление
+e := n mod 10;         //деление
+k:= 100*e + 10*d + c;
+if n = k then write ('палиндром') else write('не палиндром');//вывод на экран
+readln;
+end.//конетс

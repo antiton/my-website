@@ -1,0 +1,18 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var   //Задаём переменную
+s:string;
+i:byte;
+begin
+write('s='); //вывод на экран
+readln(s);   // ввод с клавиатуры
+write('s=');
+for i:=length(s) downto 1 do  // оператор цикла 
+write(s[i]);
+readln;
+end.

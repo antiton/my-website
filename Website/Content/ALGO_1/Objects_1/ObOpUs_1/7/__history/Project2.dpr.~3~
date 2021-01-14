@@ -1,0 +1,27 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+u,u1:integer;
+r,r1:integer;
+begin
+Writeln('¬ведите сопротивление первой цепи: ');
+readln(r);
+Writeln('¬ведите напр€жение первой цепи: ');
+readln(u);
+Writeln('¬ведите сопротивление второй цепи: ');
+readln(u1);
+Writeln('¬ведите напр€жение второй цепи: ');
+readln(r1);
+if (u/r) > (u1/r1) then
+    Writeln('—ила тока в первой цепи выше чем во второй')
+else
+    Writeln('—ила тока во второй цепи выше чем в первой');
+readln;
+end.

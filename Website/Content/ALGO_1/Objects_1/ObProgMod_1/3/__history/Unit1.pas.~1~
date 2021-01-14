@@ -1,0 +1,40 @@
+unit Unit1;
+interface
+function ClrScr ():string;
+
+implementation
+function ClrScr ():string;
+  Var
+ T: string;
+ d,N,i,M: integer;
+s1,p: char;
+  begin
+ Write ('Введите текст: ');
+ ReadLn (T);
+ s1 := 'н';
+ p := 'м';
+ d := Length (T);
+ N := 0;
+ M:=0;
+ for i := 1 to d do
+ BEGIN
+ if (T [i] = s1)
+ then
+ Inc (N);
+ END;
+  WriteLn ('Количество букв н : ', N);
+for i := 1 to d do
+ BEGIN
+ if (T [i] = p)
+ then
+ Inc (M);
+ END;
+ WriteLn ('Количество букв м : ', M);
+ if M>N then
+ writeln ('Букв м больше чем букв н');
+ if M=N then
+ writeln ('Количество букв равно');
+ if M<N then
+ writeln ('Букв н больше чем букв м');
+ end;
+end.

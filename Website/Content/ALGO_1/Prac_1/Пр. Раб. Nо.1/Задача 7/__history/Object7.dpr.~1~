@@ -1,0 +1,31 @@
+program Object7;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+N: byte;
+A,B:real;      //переменные
+begin         //начало
+write('A= ');
+readln(A);   //ввод с клавиатуры
+write('B= ');
+readln(B);   //ввод с клавиатуры
+write('N= ');
+readln(N);      //ввод с клавиатуры
+writeln;
+case N of
+1: writeln('+', A,'+',B,'=', A+B);
+2: writeln('-', A,'-',B,'=', A-B);
+3: writeln('*', A,'*',B,'=', A*B);
+4: writeln('/', A,'/',B,'=', (A/B):0:3);
+//для других N выводим сообщение
+else
+writeln('deystvie s nomerom',N,' net.')
+end;
+readln;
+end.   //конец

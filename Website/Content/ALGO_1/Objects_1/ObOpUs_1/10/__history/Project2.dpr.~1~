@@ -1,0 +1,19 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var m,n,a:integer;
+
+begin
+writeln ('¬ведите 2 числа');
+readln (m,n);
+if m mod n=0 then
+writeln (m div n)
+else writeln ('M на N нацело не делитс€');
+readln;
+end.

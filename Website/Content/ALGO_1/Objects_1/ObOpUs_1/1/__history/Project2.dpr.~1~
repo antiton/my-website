@@ -1,0 +1,24 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+ a,b:real;
+ begin
+  writeln('¬ведите первое число: ');
+  readln(a);
+  writeln('¬ведите второе число: ');
+  readln(b);
+  if a>b then
+  writeln('ѕервое число больше второго');
+  if a=b then
+  writeln('ѕервое число равно второму');
+  if a<b then
+  writeln('¬торое число больше первого');
+  readln;
+  end.

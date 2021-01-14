@@ -1,0 +1,27 @@
+program Object2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+const pi=3.14;
+  var
+  d,h,S: integer;
+  Top, wall, q, q_int:real;
+begin
+writeln ('Диаметр бака');
+readln(d);
+writeln('Высота бака');
+readln(h);
+writeln('На какую площадь хватает банки');
+readln(S);
+top:=pi*sqr(d)/4;
+wall:=pi*d*h;
+q:=(top+wall)/S;
+q_int:=trunc(q)+1;
+write('Кол-во банок',q_int);
+readln;
+end.

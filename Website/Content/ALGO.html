@@ -1,0 +1,67 @@
+<<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body background="D:Website/images/back2.jpg">
+<style type="text/css">
+a .transparencyn_sointinglink a {
+  color: #f1f747;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  position: relative;
+  display: inline-block;
+}
+.transparencyn_sointinglink a:hover {
+  text-decoration:none;
+  color: #f1f747;
+  z-index:1;
+  position:relative;
+}  
+.transparencyn_sointinglink a::after{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index:-1;
+  top:0;
+  left:0;
+  pointer-events: none;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  opacity:0;
+}
+.transparencyn_sointinglink a:hover::after,
+.transparencyn_sointinglink a:focus::after {
+  background: #0a0a0a;
+  opacity:0.5;
+}
+</style>
+<style>
+   a { 
+color:fa7793; text-decoration: none; font-family: cursive;
+}  
+</style>
+<style>
+  h1 { 
+color:fa7793; text-decoration: none; font-family: cursive;
+}
+</style>  
+<body style="color: #9a4c90; background-color: #6affc3;">
+<h1>АЛГО</h1>
+<div class="transparencyn_sointinglink">  
+<a href="ALGO_1/objects.html"><p style='font-size:18px ; font-weight:100; font-family: Geneva, Arial, Helvetica, sans-serif;'>Задачи </a></p>
+</body>
+<body>
+<br>
+<a href="ALGO_1/prac.html"><p style='font-size:18px ; font-weight:100; font-family: Geneva, Arial, Helvetica, sans-serif;'>Практические работы</a></p>
+</br>
+<br>
+<a href="D:Website/index.html"><p style='font-size:18px ; font-weight:100; font-family: Geneva, Arial, Helvetica, sans-serif;'>Назад</a></p>
+</div>
+</br>
+</body>
+</html>
+</body>

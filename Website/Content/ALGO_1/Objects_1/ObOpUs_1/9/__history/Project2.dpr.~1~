@@ -1,0 +1,36 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+   A,B,C: real;
+   X1, X2: real;
+   D:real;
+begin
+  writeln ('Введите коэфиценты A,B,C');
+  readln (A,B,C);
+  if A=0
+  then if B=0
+      then writeln ('Уравнение выраждено')
+      else writeln ('Один корень x=',-C/B:6:3)
+  else
+    begin
+      D:=B*B-4*A*C;
+      A:=2*A;
+      if D<0
+    then writeln ('Нет действительных корней')
+     else if D=0
+     then writeln ('Корни равны: X1=X2', -B/A:6:3)
+     else
+        begin
+           D:=Sqrt(D);
+           writeln ('X1=', (-B+D)/A:6:3);
+             writeln ('X2=', (-B-D)/A:6:3);
+          end;
+     end;
+end.

@@ -1,0 +1,23 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+ms:integer;
+Km4:integer;
+begin
+Writeln('¬ведите скорость в километрах в час: ');
+readln(Km4);
+Writeln('¬ведите скорость в метрах в секунду: ');
+readln(ms);
+if (ms * 3.6) < Km4 then
+    Writeln('—корость в',ms,'м/с ниже чем скорость ',Km4,' км/ч')
+else
+    Writeln('—корость в',ms,'м/с выше чем скорость ',Km4,' км/ч');
+readln;
+end.

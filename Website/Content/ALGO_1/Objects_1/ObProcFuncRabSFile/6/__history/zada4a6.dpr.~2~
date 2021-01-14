@@ -1,0 +1,54 @@
+program zada4a6;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+const n=5;                   //задание константы
+var                          //задание переменных
+f:text;
+i:integer;
+a:array[1..n] of integer;   //задание массивов
+b:array[1..n] of real;
+c:array[1..n] of string;
+begin
+assignfile(f,'C:\Users\User\Desktop\сайт\ѕз7\з6\res.txt'); //создание файла
+ begin
+ writeln('введите 5 чисел');
+ for i := 1 to n do         //ввод целых чисел в массив
+  begin
+  read(a[i]);
+  end;
+ rewrite(f);
+ for i := 1 to n do
+  begin
+  write(f,a[i],' ');       //ввод данных в файл
+  end;
+ end;
+ begin
+ writeln('введите 5 вещественных чисел');  //ввод вещественных чисел в массив
+ for i := 1 to n do
+  begin
+  read(b[i]);
+  end;
+ for i := 1 to n do
+  begin
+  write(f,b[i],' ');       //ввод данных в файл из массива
+  end;
+ end;
+ readln;
+ begin
+ writeln('введите 5 слов');    //ввод слов в массив
+ for i := 1 to n do
+  begin
+  read(c[i]);
+  end;
+ for i := 1 to n do
+  begin
+  write(f,c[i],' ');         //ввод данных в файл
+  end;
+ close(f);
+ end;
+end.

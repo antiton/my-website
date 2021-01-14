@@ -1,0 +1,27 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+Var
+  i:integer;  //переменная
+begin                      //начало
+ Writeln('Введите число от 6 до 14: '); //вывод на экран
+ Readln(i);                             //счет с клавиатуры
+ case i of                              //выбор из
+ 6: writeln('Шестерка');
+ 7: writeln('Семерка');
+ 8: writeln('Восьмерка');
+ 9: writeln('Девятка');
+ 10: writeln('Десятка');
+ 11: writeln('Валет');
+ 12: writeln('Дама');
+ 13: writeln('Король');
+ 14: writeln('Туз');
+ end;
+ readln;
+end.                         //конец

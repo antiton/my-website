@@ -1,0 +1,22 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+Var
+  i:integer;
+begin
+ Writeln('Введите число от 1 до 12: ');
+ Readln(i);
+ case i of
+ 1,2,12: writeln('Зима');
+ 3,4,5: writeln('Весна');
+ 6,7,8: writeln('Лето');
+ 9,10,11: writeln('Осень');
+ end;
+ readln;
+end.

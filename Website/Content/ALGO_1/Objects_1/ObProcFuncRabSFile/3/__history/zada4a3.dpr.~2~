@@ -1,0 +1,47 @@
+program zada4a3;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+const n=5;                   //задание переменных
+var
+f:text;
+i,max:integer;
+a:array[1..n] of integer;
+procedure vv;               //процедура ввода чисел в массив
+begin
+writeln('Введите пять чисел');
+for i:=1 to n do
+read(a[i]);
+end;
+procedure sum;              //процедура вычесления наибольшего числа в массиве
+begin
+max:=0;
+for i:=1 to n do
+ begin
+ if(a[i] > max) then max := a[i];
+ end;
+end;
+procedure vi;               //процедура вывода зачений
+begin
+writeln('Наибольшее число ',max);
+end;
+procedure fil;             //процедура записи значений в файл
+begin
+assignfile(f,'C:\Users\User\Desktop\сайт\Пз7\з3\res.txt');
+rewrite(f);
+writeln(f, 'Наибольшее число ',max);
+closefile(f);
+end;
+begin                      //основная программа
+vv;
+sum;
+vi;
+fil;
+readln;
+readln;
+end.

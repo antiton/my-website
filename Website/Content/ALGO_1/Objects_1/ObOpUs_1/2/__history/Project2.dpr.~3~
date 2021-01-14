@@ -1,0 +1,27 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+ a,b:real;                   //Переменные
+ begin                       //Начало
+  writeln('Введите первое число: '); //Вывод на экран
+  readln(a);                         //Задаем значение переменной
+  writeln('Введите второе число: '); //Вывод на экран
+  readln(b);
+   if a=b then                        //Условие
+   writeln('Максимум и минимум совпадают: ',a);                         //Задаем значение переменной
+  if a>b then                        //Условие
+   writeln('Максимум: ',a,'Минимум: ',b);
+   writeln('Минимум: ',b)
+   else
+   writeln('Максимум: ',b);
+   writeln('Минимум: ',a);
+
+
+                              //Конец

@@ -1,0 +1,35 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+Var
+ a,b,c,v,d:integer;
+begin
+writeln('¬ведите трехзначное число: ');
+readln(a);
+b:=a div(100);
+d:=a div(10);
+v:=a mod(10);
+c:=d mod(10);
+writeln('ѕервое число: ', b);
+writeln('“ретье число: ', v);
+writeln('¬торое число: ', c);
+if b>v then
+writeln('1-€ цифра больше 3-й')
+else
+writeln('1-€ цифра меньше 3-й');
+if b>c then
+writeln('1-€ цифра больше 2-й')
+else
+writeln('1-€ цифра меньше 2-й');
+if c>v then
+writeln('2-€ цифра больше 3-й')
+else
+writeln('2-€ цифра меньше 3-й');
+readln;
+end.

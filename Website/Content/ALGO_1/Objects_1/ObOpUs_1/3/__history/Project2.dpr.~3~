@@ -1,0 +1,24 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+Ft:integer;
+res:real;
+Km:integer;
+begin
+Writeln('Введите расстояние в км: ');
+readln(Km);
+Writeln('Введите расстояние в футах: ');
+readln(Ft);
+if ((Ft * 0.45 )/ 1000) < Km then
+    Writeln(Ft,' футов меньше, чем ',Km,' км')
+else
+    Writeln(Ft,' футов больше, чем ',Km,' км');
+readln;
+end.

@@ -1,0 +1,18 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var s:string;
+BEGIN
+    s:= 'курсор';
+    writeln(s);
+    Delete(s,1,4);
+    Insert('танц',s,1);
+    writeln(s);
+    readln;
+END.

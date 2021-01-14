@@ -1,0 +1,17 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var         // задаём переменные
+a,b:string;
+begin
+writeln('Vvedite slovo is chetnogo chisla bukv: '); //вывод
+readln(a);         // ввод
+insert(copy(a,4,3),b,3); // вставка 
+insert(copy(a,1,3),b,6);
+writeln(b);  //вывод
+readln;
+end.
